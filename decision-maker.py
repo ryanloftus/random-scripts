@@ -3,12 +3,11 @@ import random
 # TODO: add optional weight for options
 
 options = []
-# todo: have a better way of ending the options list in input
-print("What are the options you are deciding between? (to stop entering options, enter \"no more options\")")
+print("What are the options you are deciding between? (enter each option on a separate line and use a blank line to indicate the end of the list)")
 
 while True:
     next_option = input()
-    if next_option == "no more options":
+    if len(next_option) == 0:
         break
     options.append(next_option)
 
